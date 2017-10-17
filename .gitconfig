@@ -1,0 +1,12 @@
+[user]
+	name = Kevin Ashcraft
+	email = kevin@kevashcraft.com
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[push]
+	default = current
+[core]
+	trustctime = false
+	fileMode = false

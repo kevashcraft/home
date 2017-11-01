@@ -15,19 +15,17 @@ set $moda Mod1
 # lock screen
 bindsym $mod+x exec i3lock -i /home/kevin/Pictures/images/space-lock.png
 
-# open chromium
-# bindsym $mod+c exec i3-msg 'workspace 3:Me; exec chromium --profile-directory=Default'; exec i3-msg 'workspace 4:AO; exec chromium --profile-directory="Profile 1"'; exec i3-msg 'workspace 4:LD; exec chromium --profile-directory="Profile 3"'
-# bindsym $mod+c i3-msg 'workspace 1:cmd; exec xfce4-terminal'; i3-msg 'workspace 2:Sublime; exec subl3'; i3-msg 'workspace 3:Me; exec chromium --profile-directory=Default'; i3-msg 'workspace 4:AO; exec chromium --profile-directory="Profile 1"'; i3-msg 'workspace 4:LD; exec chromium --profile-directory="Profile 3"'
-
 # print screen
-bindsym --release Print exec "SC_FILE=~/kscreen-$(date +%Y-%m-%d-%T).png; scrot -s $SC_FILE; xclip -selection clipboard -t image/png $SC_FILE"
+bindsym --release Print exec "SC_FILE=~/Documents/screenshots/kscreen-$(date +%Y-%m-%d-%T).png; scrot -s $SC_FILE; xclip -selection clipboard -t image/png $SC_FILE"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 8
 #font pango: Ubuntu Mono 10
-font pango: hermit 10
+font pango: hermit 8
 
+# remove window borders
+new_window none
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -120,9 +118,6 @@ bindsym $mod+Shift+F2 move container to workspace sublime
 bindsym $mod+$moda+F3 workspace web; exec chromium --profile-directory=Default
 bindsym $mod+F3 workspace web
 bindsym $mod+Shift+F3 move container to workspace web
-bindsym $mod+$moda+F4 workspace ao; exec chromium --profile-directory="Profile 1"
-bindsym $mod+F4 workspace ao
-bindsym $mod+Shift+F4 move container to workspace ao
 bindsym $mod+$moda+F5 workspace ld; exec chromium --profile-directory="Profile 3"
 bindsym $mod+F5 workspace ld
 bindsym $mod+Shift+F5 move container to workspace ld

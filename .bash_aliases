@@ -8,7 +8,7 @@
 alias gs='git status -uno'
 
 ## bins
-alias sc='~/bin/screencap'
+alias sc='~/bin/screencast'
 
 ## Chromecast Firewalls 
 alias ccfwopen='sudo firewall-cmd --add-port=32768-61000/udp --add-port=5556/tcp --add-port=5558/tcp'

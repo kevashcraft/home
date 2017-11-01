@@ -5,6 +5,8 @@
 # General
 
 ## git
+alias ga='git add'
+alias gc='git commit -m'
 alias gs='git status -uno'
 
 ## bins

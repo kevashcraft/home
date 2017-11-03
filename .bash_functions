@@ -40,6 +40,7 @@ screencast() {
     vlc /home/kevin/Documents/screencaps/$screencap
   done
 }
+alias sc='screencast'
 
 # Giffit
 ## create a gif from a video

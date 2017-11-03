@@ -4,9 +4,6 @@
 
 # General
 
-## bins
-alias sc='~/bin/screencast'
-
 ## chores
 alias backup='rsync -av --files-from=/home/kevin/.backup_monthly /home/kevin/ /home/kevin/Documents/Backups/$(date -I)/'
 alias forward_vm_port='sudo firewall-cmd --add-forward-port=port=5432:proto=tcp:toport=5432:toaddr=10.10.100.2'

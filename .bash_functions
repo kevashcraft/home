@@ -27,7 +27,7 @@ screencast() {
        [bg][fg]overlay=W-w-10:10,format=yuv420p[out]" \
     -map "[out]" \
     -map 2:a \
-    -c:v libx264 \ # convert to x.264 (fastest method)
+    -c:v libx264 \
       -preset veryfast \
       -g 30 \ # ensure 1 keyframe/second
     -c:a aac \
@@ -36,9 +36,9 @@ screencast() {
     /home/kevin/Documents/screencaps/$screencap
 
   ## auto open vlc
-  if [[ $open_vlc="true"]]; do
+  if [[ $open_vlc="true" ]]; then
     vlc /home/kevin/Documents/screencaps/$screencap
-  done
+  fi
 }
 alias sc='screencast'
 
